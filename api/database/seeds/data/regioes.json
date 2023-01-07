@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nome": "Norte"
+  },
+  {
+    "id": 2,
+    "nome": "Nordeste"
+  },
+  {
+    "id": 3,
+    "nome": "Centro-Oeste"
+  },
+  {
+    "id": 4,
+    "nome": "Sudeste"
+  },
+  {
+    "id": 5,
+    "nome": "Sul"
+  }
+]

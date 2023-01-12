@@ -57,6 +57,8 @@ class Refugiado extends Model
                         "key" => $refugiado["estado"],
                         "count" => $refugiado["count"]
                     ]);
+                    $refugiadoFormatted[$anoIndex]["total"] += $refugiado['count'];
+
 
                 } else {
                     array_push($refugiadoFormatted[$anoIndex]["items"], [
@@ -66,12 +68,14 @@ class Refugiado extends Model
                             "count" => $refugiado["count"]
                         ]]
                     ]);
+                    $refugiadoFormatted[$anoIndex]["total"] += $refugiado['count'];
 
                 }
 
             } else {
                 array_push($refugiadoFormatted, [
                     "key" => $refugiado["ano_inicio"],
+                    "total" => $refugiado["count"],
                     "items" => [[
                         "key" => $refugiado["pais"],
                         "items" => [[

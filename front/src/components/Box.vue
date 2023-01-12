@@ -1,5 +1,5 @@
 <template>
-	<v-tooltip bottom open-delay="300" :disabled="!tooltipMessage">
+	<v-tooltip bottom open-delay="300" :disabled="!tooltipMessage || value == 0">
 		<template v-slot:activator="{ on }">
 			<v-hover v-slot:default="{ hover }">
 				<div 
